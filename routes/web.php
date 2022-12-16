@@ -18,4 +18,10 @@ use App\Http\Controllers\UserController;
 //    return view('welcome');
 //});
 
-Route::resource('/user_details', UserController::class);
+//Route::resource('/user_details', UserController::class);
+
+//HomeController
+Route::get('/', [HomeController::class, "index"])->name('home');
+
+//UserController
+Route::get('user/', [UserController::class, "index"])->name('user');
