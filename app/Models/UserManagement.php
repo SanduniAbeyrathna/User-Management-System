@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserManagement extends Model
 {
-    use HasFactory;
+    protected $table = 'user';
+    protected $primaryKey = 'id';
+    protected $fillable = ['name', 'address', 'mobile'];
 }
